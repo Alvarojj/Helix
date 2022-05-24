@@ -1,5 +1,5 @@
 package Vista;
-
+//port com.formdev.flatlaf.FlaDarkLaf;
 import java.awt.Toolkit;
 import java.beans.PropertyVetoException;
 import java.time.LocalDate;
@@ -229,7 +229,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     public static void main(String args[]) {
 
         try {
-           UIManager.setLookAndFeel("com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatArcDarkIJTheme");
+           //UIManager.setLookAndFeel(new FlatDarkLaf());
         } catch (Exception e) {
             e.printStackTrace();
         }
