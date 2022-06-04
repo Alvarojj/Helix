@@ -1,10 +1,10 @@
 package Vista;
-//port com.formdev.flatlaf.FlaDarkLaf;
+
+import com.formdev.flatlaf.FlatDarkLaf;
 import java.awt.Toolkit;
 import java.beans.PropertyVetoException;
 import java.time.LocalDate;
 import javax.swing.UIManager;
-
 
 public class MenuPrincipal extends javax.swing.JFrame {
 
@@ -12,7 +12,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     Registrar registrar = new Registrar(this, true);
     PanelAdmin panelAdmin = new PanelAdmin();
 
-    public MenuPrincipal() {
+    public MenuPrincipal(){
         login.setModal(true);
         login.setVisible(true);
         login.toFront();
@@ -102,7 +102,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                         .addComponent(fecha))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(510, 510, 510)
-                        .addComponent(admin, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(admin, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -229,7 +229,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     public static void main(String args[]) {
 
         try {
-           //UIManager.setLookAndFeel(new FlatDarkLaf());
+            UIManager.setLookAndFeel(new FlatDarkLaf());
         } catch (Exception e) {
             e.printStackTrace();
         }
